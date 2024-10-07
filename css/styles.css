@@ -67,12 +67,6 @@ p {
     padding-right: 15%;
 }
 
-.box img {
-    width: 32%;
-    height: auto;
-    background-color: aliceblue;
-}
-
 .box .img {
     height: 20rem;
     background-color: aliceblue;
