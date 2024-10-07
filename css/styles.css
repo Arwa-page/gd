@@ -61,7 +61,7 @@ p {
 .box {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr 1fr 1fr);
     gap: 1.5%;
     padding-left: 15%;
     padding-right: 15%;
