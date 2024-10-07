@@ -69,7 +69,7 @@ p {
 
 .box img {
     width: 32%;
-    height: 20rem;
+    height: auto;
     background-color: aliceblue;
 }
 
