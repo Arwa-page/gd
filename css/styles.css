@@ -13,9 +13,9 @@
     background-color: #1B1212;
     text-align: center;
     display: flex;
-    flex-direction: column; /* Stack the content vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-background-img {
@@ -26,26 +26,26 @@
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: column; /* Align items vertically */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .logo {
     width: 4%;
-    margin-bottom: 5rem; /* Adjust margin for spacing */
+    margin-bottom: 5rem;
     margin-top: 2rem;
 }
 
 h1 {
     color: #fff;
-    font-size: 3rem; /* Adjust font size for better alignment */
+    font-size: 3rem;
     margin-bottom: 2rem;
 }
 
 p {
     color: #fff;
-    font-size: 1.1rem; /* Slightly reduce the paragraph size */
+    font-size: 1.1rem;
     margin-bottom: 11rem;
     text-align: left;
 }
@@ -54,28 +54,99 @@ p {
     color: #FF00FF;
 }
 
-.box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.box .dream {
-    display: flex;
-    flex-direction: column;
-    width: 32%;
-}
-
-.box .dream img {
-    width: 100%;
-    padding-bottom: 15px;
-    border-radius: 5px;
-}
-
 .projects {
-    margin-top: -5rem;
+    margin-top: -4.6rem;
 }
 
+.box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
 
+.box .img {
+    height: 20rem;
+    background-color: aliceblue;
+}
 
+/* Media Queries */
 
+/* For devices with a width of 1200px or more (desktops) */
+@media (min-width: 1200px) {
+    .header-container {
+        min-height: 70vh;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    .box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* For tablets and medium screens (600px to 1200px) */
+@media (max-width: 1200px) and (min-width: 600px) {
+    .header-container {
+        min-height: 60vh;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-bottom: 8rem;
+        text-align: center;
+    }
+
+    .box {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .box .img {
+        height: 18rem;
+    }
+}
+
+/* For mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
+    .header-container {
+        min-height: 50vh;
+    }
+
+    .logo {
+        width: 15%; /* Larger logo for smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+
+    .box {
+        grid-template-columns: 1fr;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .box .img {
+        height: 15rem;
+    }
+}
