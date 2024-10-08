@@ -75,6 +75,11 @@ p {
     width: 32.5%;
 }
 
+.projects .box .column img {
+    width: 100%;
+    
+}
+
 /* Media Queries */
 
 /* For devices with a width of 1200px or more (desktops) */
