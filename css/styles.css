@@ -55,7 +55,10 @@ p {
 }
 
 .projects {
-    margin-top: -4.6rem;
+    margin: -4.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box {
