@@ -62,17 +62,17 @@ p {
     max-width: 80%;
 }
 
-.projects .column {
+.projects .box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.box .img {
-    height: auto;
-    min-height: 10rem;
-    background-color: aliceblue;
+.projects .box .column {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
 }
 
 /* Media Queries */
