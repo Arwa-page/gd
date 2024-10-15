@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
     font-family: "Plus Jakarta Sans", system-ui;
     box-sizing: border-box;
+}
+
+body {
+    margin: 0; padding: 0;
+    padding-bottom: 2rem;
 }
 
 .header-container {
     width: 100%;
     min-height: 65vh;
-    background-color: #1B1212;
+    background-color: #766674;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -20,7 +24,7 @@
 
 .header-background-img {
     width: 100%;
-    min-height: 65vh;
+    height: 65vh;
     background-image: url(../assets/images/pattern.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,14 +35,15 @@
     justify-content: center;
 }
 
+
 .logo {
-    width: 4%;
+    width: 4.4rem;
     margin-bottom: 5rem;
-    margin-top: 2rem;
+    padding-top: 2rem;
 }
 
 h1 {
-    color: #fff;
+    color: #fcf6fa;
     font-size: 3rem;
     margin-bottom: 2rem;
 }
@@ -48,39 +53,59 @@ p {
     font-size: 1.1rem;
     margin-bottom: 11rem;
     text-align: left;
+    font-weight: 300;
 }
 
 .phrase {
-    color: #FF00FF;
+    color: #f9d1ff;
+    font-weight: 600;
 }
 
 .projects {
-    margin: -4.6rem 10% 0 10%;
+    margin-top: -3.9rem;
     display: flex;
     justify-content: center;
-    max-width: 80%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .projects .box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+
+    width: 80%;
+
 }
 
 .projects .box .column {
+    flex: 1;
+    margin: 0 10px;
     display: flex;
     flex-direction: column;
     width: 32.5%;
+
 }
 
 .projects .box .column img {
     width: 100%;
-    padding-bottom: 4%;
+    margin-bottom: 1rem;
+    border-radius: .2rem;
 
 }
 
 /* Media Queries */
+
+@media only screen and (max-width:769px) {
+    .projects .box {
+        flex-direction: column;
+    }
+
+    .projects .box .column {
+        width: 100%;
+    }
+}
 
 /* For devices with a width of 1200px or more (desktops) */
 @media (min-width: 1200px) {
@@ -96,9 +121,6 @@ p {
         font-size: 1.3rem;
     }
 
-    .box {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 /* For tablets and medium screens (600px to 1200px) */
@@ -117,15 +139,6 @@ p {
         text-align: center;
     }
 
-    .box {
-        grid-template-columns: repeat(2, 1fr);
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-
-    .box .img {
-        height: 18rem;
-    }
 }
 
 /* For mobile devices (max-width: 600px) */
@@ -148,13 +161,7 @@ p {
         text-align: center;
     }
 
-    .box {
-        grid-template-columns: 1fr;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .box .img {
-        height: 15rem;
-    }
 }
+
+
+
