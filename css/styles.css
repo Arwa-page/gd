@@ -61,9 +61,17 @@ header .header-background-img p span  {
     font-weight: 600;
 }
 
+@media(max-width:700px){
+    header .header-background-img p{
+        font-size: 1.7rem;
+        text-align: center;
+        margin: 0 10px;
+    }
+}
+
 .section {
     width: 100%;
-    padding-top: 5%; padding-bottom: 3%;
+    padding-top: 5%; padding-bottom: 5%;
 
 }
 
@@ -97,7 +105,19 @@ header .header-background-img p span  {
 }
 
 
+@media(max-width:700px){
+    .section h2{
+        font-size: 2.3rem;
+    }
 
+    .section .projects .post{
+        width: 100%;
+    }
+
+    .section .projects .flyer {
+        width: 100%;
+    }
+}
 
 
 
