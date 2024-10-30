@@ -91,12 +91,12 @@ header .header-background-img p span  {
     align-items: center;
     margin-top: 4%;
     width: 97%;
-    gap: 10px;
+    gap: 30px;
     
 }
 
 .section .projects .post {
-    width: 32%;
+    width: 30%;
     box-shadow: 0 2px 5px rgba(0,0,0,1);
 }
 
